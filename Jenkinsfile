@@ -54,6 +54,9 @@ pipeline {
       archive '**/target/*.jar'
       
     }
+    failure {
+            mail to: team@example.com, subject: 'The Pipeline failed :('
+        }
     
   }
 }
