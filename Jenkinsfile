@@ -53,8 +53,8 @@ pipeline {
       junit '**/target/surefire-reports/TEST-*.xml'
       archive '**/target/*.jar'
     }
-    failure {
-            mail to: 'saiida1.sghaier@gmail.com' , subject: 'The Pipeline failed :(' , body: "Something is wrong with "
+    success {
+            mail to: 'saiida1.sghaier@gmail.com' , subject: 'The Pipeline success :(' , body: "Something is wrong with "
     }  
 }
 }
