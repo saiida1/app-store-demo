@@ -52,11 +52,11 @@ pipeline {
     always {
       junit '**/target/surefire-reports/TEST-*.xml'
       archive '**/target/*.jar'
-      
+    }  
     }
     failure {
-            mail to: example@gmail.com, subject: 'The Pipeline failed '
+            mail to: saiida1.sghaier@gmail.com, subject: 'The Pipeline failed '
         }
     
-  }
+  
 }
