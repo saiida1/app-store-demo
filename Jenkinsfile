@@ -52,6 +52,8 @@ pipeline {
     always {
       junit '**/target/surefire-reports/TEST-*.xml'
       archive '**/target/*.jar'
-    }  
+    }
+    failure {
+            echo 'I failed :('
     }  
 }
