@@ -54,7 +54,7 @@ pipeline {
       archive '**/target/*.jar'
     }
     failure {
-            echo 'I failed :('
+            mail to: saiida1.sghaier@gmail.com, subject: 'The Pipeline failed :('
     }  
 }
 }
